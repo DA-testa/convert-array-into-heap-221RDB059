@@ -65,7 +65,6 @@ def main():
     # add another input for I or F
     # first two tests are from keyboard, third test is from a file
     test_type = input("Choose a test type (I or F): ").lower()
-    assert len(test_type) == 1
 
     if test_type.find("i") != -1:
         # input from keyboard
