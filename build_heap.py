@@ -72,7 +72,7 @@ def main():
         data = list(map(int, input("Nodes: ").split()))
     elif test_type.find("f") != -1:
         filename = input("Enter file name: ")
-        with open(f"tests{filename}", 'r') as f:
+        with open(f"tests/{filename}", 'r') as f:
             n = int(f.readline())
             data = list(map(int, f.readline().split()))
     else:
