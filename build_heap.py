@@ -11,6 +11,9 @@ def swap(data, node_one_index, node_two_index):
 
 
 # This is the way I came up with to find the last non-leaf node
+# The day after writing this I realised I could've just done return n // 2 - 1
+# bruh
+# I am going to leave this, because it looks cool I guess
 def find_last_nonleaf_node(n):
     full_row_amount = floor(log2(n+1))
     last_row_node_amount = n - (2**full_row_amount - 1)
